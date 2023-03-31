@@ -9,7 +9,7 @@ class OCS {
   }
 
   async login() {
-    const response = await fetch('https://oregon.hospitalcapacity.com/login', {
+    const response = await fetch('https://test.cors.workers.dev/https://oregon.hospitalcapacity.com/login', {
       method: 'POST',
       headers: this.headers,
       body: JSON.stringify({ username: this.username, password: this.password })
@@ -20,7 +20,7 @@ class OCS {
 
   async getCapacitySystemSource() {
     const data = { heirarchy: 'state', sortData: 'default', view: 'divert' };
-    const response = await fetch('https://oregon.hospitalcapacity.com/api/ah/tiledata/CapacitySystemSource', {
+    const response = await fetch('https://test.cors.workers.dev/https://oregon.hospitalcapacity.com/api/ah/tiledata/CapacitySystemSource', {
       method: 'POST',
       headers: this.headers,
       body: JSON.stringify(data)
