@@ -8,8 +8,15 @@
 </style>
 <script src=""></script>
 <body>
-<script src="ocsAPI.js"></script>
-<h3 id="demo" onclick="myFunction()">Click me to change my color.</h3>
+<!--<script src="ocsAPI.js"></script>-->
+<form action="#">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <!--<input type="submit" value="Submit">-->
+  </form>
+<button id="demo" onclick="myFunction()">Click me to change my color.</button>
 <div class="">
  <h1>This is a Heading</h1>
  <p>This is a paragraph.</p>
@@ -17,7 +24,8 @@
 </div>
 <script>
 function myFunction() {
-  document.getElementById("demo").style.color = "red";
+    console.log(document.getElementById("fname").value);
+  //document.getElementById("demo").style.color = "red";
 }
 </script>
 </body>
