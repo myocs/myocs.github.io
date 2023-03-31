@@ -9,13 +9,16 @@
 <script src=""></script>
 <body>
 <script src="ocsAPI.js"></script>
-<img src="img_la.jpg" alt="LA" style="width:100%">
-
+<h3 id="demo" onclick="myFunction()">Click me to change my color.</h3>
 <div class="">
  <h1>This is a Heading</h1>
  <p>This is a paragraph.</p>
  <p>This is another paragraph.</p>
 </div>
-
+<script>
+function myFunction() {
+  document.getElementById("demo").style.color = "red";
+}
+</script>
 </body>
 </html>
